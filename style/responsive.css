@@ -1,0 +1,84 @@
+/* laptop device minimum 1025px */
+@media screen and (max-width:1200px) {
+    .banner-content h1 {
+        font-size: 48px;
+        font-weight: bold;
+    }
+    /* font change kora hoyeche laptop device er jonno */
+    .service-card{
+        padding: 80px 20px;
+    }
+    .story-image img{
+        height :100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+}
+
+/* tablet device minimum 641px */
+@media screen and (max-width:1024px) {
+    #banner{
+        flex-direction: column;
+    }
+    /* On small devices, the banner switches to a column using flex-direction: column for better responsiveness. */
+    #banner{
+        flex-direction: column-reverse;
+    }
+    /* Image on top, content below. */
+    /* upore flex direction column na dileo colbe kenona niche column-reverse dile 2 kaj hoy */
+
+    .banner-content {
+        width: 100%;
+    }
+    /* To fit small devices, banner content(text,button etc) is set to width: 100% so it adjusts with the banner size. */
+
+    .banner-image {
+        width: 100%;
+    }
+    /* Setting banner image to 100% makes it look good and responsive on all devices. */
+
+    #service-card-container{
+        flex-direction: column;
+    }
+    .service-card{
+        max-width: 100%;
+    }
+    /* To fit small devices,service card is set to width :100% so it adjusts with the service-card-container */
+    .story-card {
+        flex-direction: column;
+    }
+    .story-content{
+        width:100%;
+        text-align: center;
+    }
+    .story-image{
+        width:100%;
+}
+}
+
+
+
+/* mobile device minimum 425px  */
+@media screen and (max-width:640px) {
+    .banner-content h1 {
+        font-size: 36px;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+    .btn-white{
+        padding: 10px 20px;
+    }
+    .heading-content h2{
+        font-size: 32px;
+    }
+    #country-card-container{
+        flex-direction: column;
+    }
+    #country-card-container h2{
+        text-align: center;
+    }
+}

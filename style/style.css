@@ -1,0 +1,188 @@
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  box-sizing: border-box ;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(#ffffff, #ebdcff);
+}
+
+img {
+  width: 100%
+}
+/* Responsive দেখাবে: স্ক্রিন ছোট হলে ছবির সাইজ নিজে থেকেই adjust হবে।  */
+
+.btn {
+  background-color: #872bff;
+  border-radius: 30px;
+  padding: 16px 32px;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.btn-white {
+  /* background-color: #872bff; */
+  border: 2px solid #872bff;
+  border-radius: 30px;
+  padding: 16px 32px;
+  /* color: white; */
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.heading-content {
+  text-align: center;
+}
+.heading-content h4 {
+  color: #f411cf;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.heading-content h2 {
+  font-weight: bold;
+  font-size: 44px;
+  margin-bottom: 30px;
+}
+
+#banner {
+  /* margin-top: 100px;
+  margin-bottom: 120px;
+  margin-right: auto;
+  margin-left: auto; */
+  /*          TB    L-R */
+  /* margin: 100px 50px;  */
+  /*           T     R    B    L   */
+  /* margin: 100px 10px 25px 50px; */
+
+  margin: 100px auto 120px auto;
+
+  border: 2px solid #872bff10;
+  border-radius: 40px;
+
+  padding: 20px 30px;
+  background-image: url("../images/hero-bg.png");
+
+  width: 87.5%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: white;
+}
+
+/* On small devices(tablet), the banner switches to a column using flex-direction: column for better responsiveness. So in responsive.css, flex-direction: column is used for responsiveness.
+Go -> responsive.css -> tablet device*/
+
+.banner-content {
+  width: 50%;
+}
+/* Even after making the banner column layout on small devices(tablet), the content keeps its old width, which doesn't look good. So, it's given width: 100% to fit the banner area properly.Go -> responsive.css -> tablet device*/
+
+.banner-content * {
+  margin-bottom: 20px;
+}
+
+.banner-content h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+/* The font size became too large for laptop devices, so I'm reducing the font size in `responsive.css` to make it responsive.
+Go -> responsive.css -> laptop device
+ */
+
+.banner-content p {
+  font-weight: medium;
+  font-size: 18px;
+  color: #a8a8a8;
+}
+
+.banner-content h1 span {
+  color: #f411cf;
+}
+.banner-image {
+  width: 50%;
+}
+/* If the banner image width is 50%, it won’t look responsive. So, setting it to 100% ensures it fits nicely in all cases. Go -> responsive.css -> tablet device */
+
+
+
+/* .banner-image img {
+  width: 600px;
+} */ 
+/* banner-image img er width fixed thakle problem hobe tai 100% kore dewa better upore body er pore kora ache. Go -> upore*/
+
+#service,
+#story,
+#country {
+  width: 87.5%;
+  margin: 0px auto 120px auto;
+}
+#service-card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.service-card {
+  background-color: white;
+  padding: 100px 60px;
+  text-align: center;
+  max-width: 350px;
+  border-radius: 30px;
+}
+.service-card img {
+  margin-bottom: 30px;
+  width:80px;
+}
+.service-card h2 {
+  font-weight: semibold;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.service-card p {
+  color: #a8a8a8;
+}
+
+.story-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 24px;
+  display: flex;
+  gap: 20px;
+}
+
+.story-content{
+  width: 60%;
+}
+.story-image{
+  width: 40%;
+}
+
+.story-content img {
+  width: 50px;
+}
+
+.story-content h2,
+.story-content p,
+.story-content img {
+  margin-bottom: 30px;
+}
+
+#country-card-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#country-card-container h2 {
+  background-color: white;
+  padding: 40px;
+  border-radius: 30px;
+}
